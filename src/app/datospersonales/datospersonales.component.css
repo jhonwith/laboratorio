@@ -1,0 +1,52 @@
+*{
+  /*padding-top: 15px;*/
+  margin-top: 40px;
+}
+.datospersonales{
+  border: rgb(10, 0, 0) 8px solid;
+  border-radius: 20px;
+  width: 1000px;
+  margin-left: 50px;
+  box-shadow:
+       inset 0 -3em 3em rgba(0,0,0,0.1),
+             0 0  0 2px rgb(255,255,255),
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
+             height: 280px;
+}
+.datospersonales h2{
+  color: red;
+  font-size: 2rem;
+  font-weight: 800;
+  margin-left: 80px;
+}
+
+.nombre label{
+  margin-left: 190px;
+  margin-top: 10px;
+  font-weight: 900;
+}
+.apellido ,label-input{
+  margin-left: 500px;
+  margin-top: 10px;
+  font-weight: 900;
+  height: 100px;
+  position: relative;
+  top: -85px;
+}
+.datospersonales input{
+  margin-left: 10px;
+  height: 30px;
+  margin-top: 10px;
+  border-radius: 4px;
+  background-color: aquamarine;
+}
+.edad ,label-input{
+  margin-left: 216px;
+  margin-top: -40px;
+  font-weight: 900;
+  position: relative;
+  top: -85px;
+}
+.edad input{
+  width: 100px;
+}
