@@ -1,0 +1,42 @@
+<!--
+<h2>Formulario Persona</h2>
+<div class="contenido">
+  <form>
+    <label for="nombre">Nombre:</label>
+    <input type="text" placeholder="Ingrese Nombre" required="ingrese nombre">
+  </form>
+
+<div class="">
+  <label for="apellido">Apellido:</label>
+  <input type="text"   placeholder="Ingrese Apellido">
+</div>
+
+<div class="">
+  <label for="ci">Ci:</label>
+  <input type="text"   placeholder="Ingrese Carnet Identidad">
+</div>
+
+<div class="">
+  <label for="edadx">Edad:</label>
+  <input type="text"   placeholder="Ingrese Edad">
+</div>
+ <button class="btn btn-danger">Enviar</button>
+</div>
+-->
+<h2>Formulario Relativo</h2>
+<div class="container">
+  <form [formGroup]="formularioRelativo">
+    <label>Nombre</label>
+
+    <input
+    type="text" class="form-control" formControlName="nombre" placeholder="Ingrese Nombre">
+    <label >Apellido</label>
+    <input type="text" class="form-control" formControlName="apellido" placeholder="Ingrese Apellido">
+    <button class="btn btn-danger" type="submit">Enviar</button>
+  </form>
+  <br><br>
+  {{formularioRelativo.value | json}}
+  <!--
+    [class.is-invalid]="formularioRelativo.get('nombre').touched && formularioRelativo.get('nombre').invalid"
+  -->
+</div>
